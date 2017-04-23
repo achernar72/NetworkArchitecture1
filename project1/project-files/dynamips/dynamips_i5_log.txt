@@ -1,0 +1,19 @@
+Apr 23 01:37:02.852 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Apr 23 01:37:02.852 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 36101.
+Apr 23 01:37:02.867 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 23 01:37:02.867 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ash/GNS3/projects/project1/project-files/dynamips 
+Apr 23 01:37:02.867 GENERAL: working_dir=/home/ash/GNS3/projects/project1/project-files/dynamips
+Apr 23 01:37:02.868 HYPERVISOR: exec_cmd: ethsw create SW2 
+Apr 23 01:39:04.972 HYPERVISOR: exec_cmd: nio create_udp udp-404f0e50-95c7-4af7-827b-f61d72c008aa 10005 127.0.0.1 10004 
+Apr 23 01:39:04.986 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-404f0e50-95c7-4af7-827b-f61d72c008aa 
+Apr 23 01:39:04.989 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-404f0e50-95c7-4af7-827b-f61d72c008aa 1 
+Apr 23 01:39:30.624 HYPERVISOR: exec_cmd: nio create_udp udp-20e799db-a45b-47f3-b808-9b7808efe82e 10008 127.0.0.1 10009 
+Apr 23 01:39:30.640 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-20e799db-a45b-47f3-b808-9b7808efe82e 
+Apr 23 01:39:30.650 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-20e799db-a45b-47f3-b808-9b7808efe82e 1 
+Apr 23 01:39:38.019 HYPERVISOR: exec_cmd: nio create_udp udp-ed8b3eeb-caca-4b79-a9cc-dc36af26e263 10010 127.0.0.1 10011 
+Apr 23 01:39:38.020 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-ed8b3eeb-caca-4b79-a9cc-dc36af26e263 
+Apr 23 01:39:38.031 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-ed8b3eeb-caca-4b79-a9cc-dc36af26e263 1 
+Apr 23 01:54:14.227 HYPERVISOR: exec_cmd: ethsw delete SW2 
+Apr 23 01:54:14.283 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 23 01:54:14.350 HYPERVISOR: Stopped.
+Apr 23 01:54:14.350 GENERAL: reset done.

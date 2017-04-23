@@ -1,0 +1,43 @@
+Apr 23 01:37:10.266 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Apr 23 01:37:10.266 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48699.
+Apr 23 01:37:10.280 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 23 01:37:10.281 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ash/GNS3/projects/project1/project-files/dynamips 
+Apr 23 01:37:10.281 GENERAL: working_dir=/home/ash/GNS3/projects/project1/project-files/dynamips
+Apr 23 01:37:10.281 HYPERVISOR: exec_cmd: vm create R4 4 c3600 
+Apr 23 01:37:10.281 VM: VM R4 created.
+Apr 23 01:37:10.282 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5003 
+Apr 23 01:37:10.282 HYPERVISOR: exec_cmd: c3600 get_mac_addr R4 
+Apr 23 01:37:10.282 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
+Apr 23 01:37:10.283 HYPERVISOR: exec_cmd: vm set_ios R4 /home/ash/GNS3/images/IOS/c3640-jk9s-mz.124-16a.image 
+Apr 23 01:37:10.283 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 23 01:37:10.284 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 NM-1FE-TX 
+Apr 23 01:37:10.284 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 23 01:37:10.285 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x603d29f8 
+Apr 23 01:37:10.285 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 23 01:37:10.285 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 NM-1FE-TX 
+Apr 23 01:37:10.286 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 23 01:37:10.286 HYPERVISOR: exec_cmd: vm slot_add_binding R4 3 0 NM-1FE-TX 
+Apr 23 01:37:10.287 HYPERVISOR: exec_cmd: vm set_ram R4 256 
+Apr 23 01:37:10.287 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 23 01:37:10.287 HYPERVISOR: exec_cmd: vm slot_add_binding R4 2 0 NM-1FE-TX 
+Apr 23 01:37:10.288 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Apr 23 01:39:38.015 HYPERVISOR: exec_cmd: nio create_udp udp-119d31cf-ee85-41da-8587-d966b460cb56 10011 127.0.0.1 10010 
+Apr 23 01:39:38.020 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-119d31cf-ee85-41da-8587-d966b460cb56 
+Apr 23 01:39:38.021 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 23 01:40:13.915 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Apr 23 01:40:13.916 HYPERVISOR: exec_cmd: vm set_ghost_file R4 c3640-jk9s-mz.124-16a.image-256.ghost 
+Apr 23 01:40:13.916 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 23 01:40:13.917 HYPERVISOR: exec_cmd: vm start R4 
+Apr 23 01:53:58.402 HYPERVISOR: exec_cmd: vm extract_config R4 
+Apr 23 01:53:59.576 HYPERVISOR: exec_cmd: vm extract_config R4 
+Apr 23 01:54:11.123 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 23 01:54:11.124 HYPERVISOR: exec_cmd: vm stop R4 
+Apr 23 01:54:11.192 VM: VM R4 shutdown.
+Apr 23 01:54:11.193 HYPERVISOR: exec_cmd: vm extract_config R4 
+Apr 23 01:54:14.515 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 23 01:54:14.520 HYPERVISOR: exec_cmd: vm extract_config R4 
+Apr 23 01:54:14.528 HYPERVISOR: exec_cmd: vm delete R4 
+Apr 23 01:54:14.528 VM: VM R4 destroyed.
+Apr 23 01:54:14.534 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 23 01:54:14.752 HYPERVISOR: Stopped.
+Apr 23 01:54:14.752 GENERAL: reset done.
