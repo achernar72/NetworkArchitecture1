@@ -1,0 +1,55 @@
+May 08 14:37:07.612 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+May 08 14:37:07.612 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41963.
+May 08 14:37:07.639 HYPERVISOR: exec_cmd: hypervisor version 
+May 08 14:37:07.641 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ash/GNS3/projects/question3/project-files/dynamips 
+May 08 14:37:07.641 GENERAL: working_dir=/home/ash/GNS3/projects/question3/project-files/dynamips
+May 08 14:37:07.642 HYPERVISOR: exec_cmd: vm create R1 1 c3600 
+May 08 14:37:07.643 VM: VM R1 created.
+May 08 14:37:07.644 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+May 08 14:37:07.645 HYPERVISOR: exec_cmd: c3600 get_mac_addr R1 
+May 08 14:37:07.646 HYPERVISOR: exec_cmd: vm get_status R1 
+May 08 14:37:07.647 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x603d29f8 
+May 08 14:37:07.648 HYPERVISOR: exec_cmd: vm get_status R1 
+May 08 14:37:07.649 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+May 08 14:37:07.650 HYPERVISOR: exec_cmd: vm set_ios R1 /home/ash/GNS3/images/IOS/c3640-jk9s-mz.124-16a.image 
+May 08 14:37:07.651 HYPERVISOR: exec_cmd: vm get_status R1 
+May 08 14:37:07.652 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 NM-1E 
+May 08 14:37:07.653 HYPERVISOR: exec_cmd: c3600 set_mac_addr R1 cc01.1dc2.0000 
+May 08 14:37:07.654 HYPERVISOR: exec_cmd: vm get_status R1 
+May 08 14:37:07.656 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 NM-1FE-TX 
+May 08 14:37:07.657 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+May 08 14:37:07.658 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+May 08 14:37:07.659 HYPERVISOR: exec_cmd: vm get_status R1 
+May 08 14:37:07.660 HYPERVISOR: exec_cmd: vm slot_add_binding R1 3 0 NM-1FE-TX 
+May 08 14:37:07.662 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+May 08 14:37:07.739 HYPERVISOR: exec_cmd: nio create_udp udp-35ce57d4-8404-4589-bd4d-b8fa3cc6389c 10000 127.0.0.1 10001 
+May 08 14:37:07.739 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-35ce57d4-8404-4589-bd4d-b8fa3cc6389c 
+May 08 14:37:07.740 HYPERVISOR: exec_cmd: vm get_status R1 
+May 08 14:37:22.060 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+May 08 14:37:22.061 VM: VM Ghost created.
+May 08 14:37:22.065 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/ash/GNS3/images/IOS/c3640-jk9s-mz.124-16a.image 
+May 08 14:37:22.067 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 08 14:37:22.069 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3640-jk9s-mz.124-16a.image-256.ghost 
+May 08 14:37:22.071 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+May 08 14:37:22.073 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 08 14:37:22.075 HYPERVISOR: exec_cmd: vm start Ghost 
+May 08 14:37:22.419 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 08 14:37:22.419 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 08 14:37:22.539 VM: VM Ghost shutdown.
+May 08 14:37:22.541 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 08 14:37:22.541 VM: VM Ghost destroyed.
+May 08 14:37:22.544 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+May 08 14:37:22.545 HYPERVISOR: exec_cmd: vm set_ghost_file R1 c3640-jk9s-mz.124-16a.image-256.ghost 
+May 08 14:37:22.546 HYPERVISOR: exec_cmd: vm get_status R1 
+May 08 14:37:22.547 HYPERVISOR: exec_cmd: vm start R1 
+May 08 15:00:16.502 HYPERVISOR: exec_cmd: vm get_status R1 
+May 08 15:00:16.505 HYPERVISOR: exec_cmd: vm stop R1 
+May 08 15:00:16.606 VM: VM R1 shutdown.
+May 08 15:00:16.609 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 08 15:00:28.630 HYPERVISOR: exec_cmd: vm get_status R1 
+May 08 15:00:28.633 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 08 15:00:28.635 HYPERVISOR: exec_cmd: vm delete R1 
+May 08 15:00:28.635 VM: VM R1 destroyed.
+May 08 15:00:28.637 HYPERVISOR: exec_cmd: hypervisor stop 
+May 08 15:00:28.719 HYPERVISOR: Stopped.
+May 08 15:00:28.719 GENERAL: reset done.

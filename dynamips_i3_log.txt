@@ -1,0 +1,34 @@
+May 09 00:00:28.449 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+May 09 00:00:28.449 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60969.
+May 09 00:00:28.465 HYPERVISOR: exec_cmd: hypervisor version 
+May 09 00:00:28.466 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ash/GNS3/projects/question3/project-files/dynamips 
+May 09 00:00:28.466 GENERAL: working_dir=/home/ash/GNS3/projects/question3/project-files/dynamips
+May 09 00:00:28.467 HYPERVISOR: exec_cmd: vm create R3 3 c3600 
+May 09 00:00:28.467 VM: VM R3 created.
+May 09 00:00:28.467 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+May 09 00:00:28.468 HYPERVISOR: exec_cmd: c3600 get_mac_addr R3 
+May 09 00:00:28.468 HYPERVISOR: exec_cmd: c3600 set_mac_addr R3 cc03.1de1.0000 
+May 09 00:00:28.469 HYPERVISOR: exec_cmd: vm get_status R3 
+May 09 00:00:28.470 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
+May 09 00:00:28.470 HYPERVISOR: exec_cmd: vm get_status R3 
+May 09 00:00:28.471 HYPERVISOR: exec_cmd: vm slot_add_binding R3 3 0 NM-1FE-TX 
+May 09 00:00:28.471 HYPERVISOR: exec_cmd: vm get_status R3 
+May 09 00:00:28.472 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x603d29f8 
+May 09 00:00:28.472 HYPERVISOR: exec_cmd: vm set_ram R3 256 
+May 09 00:00:28.473 HYPERVISOR: exec_cmd: vm get_status R3 
+May 09 00:00:28.474 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 NM-1E 
+May 09 00:00:28.475 HYPERVISOR: exec_cmd: vm get_status R3 
+May 09 00:00:28.478 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 NM-1FE-TX 
+May 09 00:00:28.480 HYPERVISOR: exec_cmd: vm set_ios R3 /home/ash/GNS3/images/IOS/c3640-jk9s-mz.124-16a.image 
+May 09 00:00:28.481 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+May 09 00:00:28.483 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+May 09 00:00:28.682 HYPERVISOR: exec_cmd: nio create_udp udp-a284a501-cf2d-4eaf-899f-c19b120a2024 10001 127.0.0.1 10000 
+May 09 00:00:28.686 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-a284a501-cf2d-4eaf-899f-c19b120a2024 
+May 09 00:00:28.687 HYPERVISOR: exec_cmd: vm get_status R3 
+May 09 00:00:30.660 HYPERVISOR: exec_cmd: vm extract_config R3 
+May 09 00:00:31.721 HYPERVISOR: exec_cmd: vm extract_config R3 
+May 09 00:00:35.274 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+May 09 00:00:35.278 HYPERVISOR: exec_cmd: vm set_ghost_file R3 c3640-jk9s-mz.124-16a.image-256.ghost 
+May 09 00:00:35.280 HYPERVISOR: exec_cmd: vm get_status R3 
+May 09 00:00:35.281 HYPERVISOR: exec_cmd: vm start R3 
+May 09 00:23:26.689 HYPERVISOR: exec_cmd: vm extract_config R3 

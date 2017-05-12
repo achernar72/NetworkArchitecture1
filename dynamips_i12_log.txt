@@ -1,0 +1,45 @@
+May 08 14:37:07.612 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+May 08 14:37:07.612 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 46573.
+May 08 14:37:07.640 HYPERVISOR: exec_cmd: hypervisor version 
+May 08 14:37:07.641 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ash/GNS3/projects/question3/project-files/dynamips 
+May 08 14:37:07.641 GENERAL: working_dir=/home/ash/GNS3/projects/question3/project-files/dynamips
+May 08 14:37:07.642 HYPERVISOR: exec_cmd: vm create R2 2 c3600 
+May 08 14:37:07.643 VM: VM R2 created.
+May 08 14:37:07.643 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+May 08 14:37:07.644 HYPERVISOR: exec_cmd: c3600 get_mac_addr R2 
+May 08 14:37:07.645 HYPERVISOR: exec_cmd: vm get_status R2 
+May 08 14:37:07.647 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x603d29f8 
+May 08 14:37:07.648 HYPERVISOR: exec_cmd: vm get_status R2 
+May 08 14:37:07.649 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1FE-TX 
+May 08 14:37:07.650 HYPERVISOR: exec_cmd: vm set_ios R2 /home/ash/GNS3/images/IOS/c3640-jk9s-mz.124-16a.image 
+May 08 14:37:07.651 HYPERVISOR: exec_cmd: vm get_status R2 
+May 08 14:37:07.652 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 NM-4E 
+May 08 14:37:07.653 HYPERVISOR: exec_cmd: c3600 set_mac_addr R2 cc02.1dd1.0000 
+May 08 14:37:07.654 HYPERVISOR: exec_cmd: vm get_status R2 
+May 08 14:37:07.655 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 NM-1FE-TX 
+May 08 14:37:07.656 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+May 08 14:37:07.658 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+May 08 14:37:07.659 HYPERVISOR: exec_cmd: vm get_status R2 
+May 08 14:37:07.660 HYPERVISOR: exec_cmd: vm slot_add_binding R2 3 0 NM-1FE-TX 
+May 08 14:37:07.661 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+May 08 14:37:07.697 HYPERVISOR: exec_cmd: nio create_udp udp-65ef18c6-471d-4af1-a4f4-719474e5239a 10001 127.0.0.1 10000 
+May 08 14:37:07.698 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-65ef18c6-471d-4af1-a4f4-719474e5239a 
+May 08 14:37:07.698 HYPERVISOR: exec_cmd: vm get_status R2 
+May 08 14:37:07.782 HYPERVISOR: exec_cmd: nio create_udp udp-a9135b9c-b3e4-475d-9df4-aa1def3226cf 10003 127.0.0.1 10002 
+May 08 14:37:07.783 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-a9135b9c-b3e4-475d-9df4-aa1def3226cf 
+May 08 14:37:07.784 HYPERVISOR: exec_cmd: vm get_status R2 
+May 08 14:37:22.546 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+May 08 14:37:22.547 HYPERVISOR: exec_cmd: vm set_ghost_file R2 c3640-jk9s-mz.124-16a.image-256.ghost 
+May 08 14:37:22.548 HYPERVISOR: exec_cmd: vm get_status R2 
+May 08 14:37:22.548 HYPERVISOR: exec_cmd: vm start R2 
+May 08 15:00:16.498 HYPERVISOR: exec_cmd: vm get_status R2 
+May 08 15:00:16.504 HYPERVISOR: exec_cmd: vm stop R2 
+May 08 15:00:16.613 VM: VM R2 shutdown.
+May 08 15:00:16.615 HYPERVISOR: exec_cmd: vm extract_config R2 
+May 08 15:00:28.631 HYPERVISOR: exec_cmd: vm get_status R2 
+May 08 15:00:28.634 HYPERVISOR: exec_cmd: vm extract_config R2 
+May 08 15:00:28.636 HYPERVISOR: exec_cmd: vm delete R2 
+May 08 15:00:28.636 VM: VM R2 destroyed.
+May 08 15:00:28.638 HYPERVISOR: exec_cmd: hypervisor stop 
+May 08 15:00:28.696 HYPERVISOR: Stopped.
+May 08 15:00:28.696 GENERAL: reset done.
